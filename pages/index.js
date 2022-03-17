@@ -9,29 +9,52 @@ import Project from "../components/Project";
 
 export default function Home() {
   return (
-    <div className="bg-gradient-to-tl from-amber-50 to-amber-200 min-h-screen py-24">
+    <div className="text-white bg-[#494e5f] min-h-screen py-24">
       <Head>
         <title>Teresa Rosso</title>
       </Head>
       <Container>
-        <H1>Teresa Rosso</H1>
-        <H2>Ingegnere Edile</H2>
-        <header className="my-24 text-lg">
-          <P>
-            A est rerum aspernatur exercitationem ut qui. Asperiores consectetur
-            iusto possimus sint sequi magni nemo. Impedit sequi maxime optio
-            delectus placeat. Eius omnis cupiditate error porro corrupti veniam
-            maiores. Et officia dolores nemo placeat voluptatem tempora.
-          </P>
-          <P>
-            Error quisquam dolores nulla in dolores nisi debitis sint. Cum quae
-            enim eum ipsum officia voluptatem. Labore est quia consequatur
-            nostrum.
-          </P>
+        <header className="flex gap-16 items-center">
+          <Image
+            alt="Foto di Teresa Rosso"
+            src={"/me.jpeg"}
+            width="700"
+            height="700"
+            className="rounded-full object-cover object-top"
+          ></Image>
+          <div>
+            <H1>Teresa Rosso</H1>
+            <H2>Dottoressa in Ingegneria Edile</H2>
+            <div className="mt-8">
+              <P>
+                A est rerum aspernatur exercitationem ut qui. Asperiores
+                consectetur iusto possimus sint sequi magni nemo. Impedit sequi
+                maxime optio delectus placeat. Eius omnis cupiditate error porro
+                corrupti veniam maiores. Et officia dolores nemo placeat
+                voluptatem tempora.
+              </P>
+              <P>
+                Error quisquam dolores nulla in dolores nisi debitis sint. Cum
+                quae enim eum ipsum officia voluptatem. Labore est quia
+                consequatur nostrum.
+              </P>
+            </div>
+          </div>
         </header>
-        <main className="mt-12 space-y-4">
+        <main className="mt-24 space-y-4">
           <H3>Progetti</H3>
-          <div className="grid grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 gap-2">
+            {/* <Project
+              image={{
+                src: "https://via.placeholder.com/150",
+                width: 150,
+                height: 150,
+                alt: "Placeholder image",
+              }}
+              title="Robson Square Accessibilty case study"
+              id={"robson-square"}
+              year={2022}
+            />
             <Project
               image={{
                 src: "https://via.placeholder.com/150",
@@ -42,28 +65,16 @@ export default function Home() {
               title="Condominio Gioberti 45"
               id={"cond-gioberti-45"}
               year={2022}
-            />
+            /> */}
             <Project
               image={{
-                src: "https://via.placeholder.com/150",
                 width: 150,
                 height: 150,
                 alt: "Placeholder image",
               }}
-              title="Robson Square Accessibilty case study"
-              id={"robson-square"}
-              year={2022}
-            />
-            <Project
-              image={{
-                src: "https://via.placeholder.com/150",
-                width: 150,
-                height: 150,
-                alt: "Placeholder image",
-              }}
-              title="Robson Square Accessibilty case study"
-              id={"robson-square"}
-              year={2022}
+              title="The Winter Garden"
+              id={"winter-garden"}
+              year={2021}
             />
           </div>
         </main>

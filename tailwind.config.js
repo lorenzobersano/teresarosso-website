@@ -7,6 +7,9 @@ module.exports = {
     fontFamily: {
       sans: ["Karla", "ui-sans-serif"],
     },
+    container: {
+      padding: "2rem",
+    },
     extend: {},
   },
   plugins: [],
