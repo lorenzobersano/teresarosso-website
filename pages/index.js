@@ -36,8 +36,7 @@ export default function Home() {
                 grazie ai corsi universitari e me ne sono appassionata. Ho
                 quindi iniziato il mio viaggio nella modellazione digitale
                 imparando l’utilizzo di software come Revit, ReCap, Insight,
-                ARCHICAD e Enscape. E non vedo l’ora di ampliare il mio bagaglio
-                di conoscenza.
+                ARCHICAD e Enscape.
               </P>
             </div>
           </div>
@@ -51,7 +50,7 @@ export default function Home() {
                 height: 150,
                 alt: "Robson Square",
               }}
-              title="Robson Square accessibilty case study"
+              title="Robson Square accessibility case study"
               id={"robson-square"}
               year={2022}
             />
