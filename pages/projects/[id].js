@@ -38,7 +38,7 @@ function ProjectDetail({ id }) {
       ),
       toc: (
         <>
-          <p className="mt-8 mb-2 font-bold">Dettagli</p>
+          <p className="mb-2 font-bold">Dettagli</p>
           <div className="flex flex-col items-start">
             <button
               className={`${step === 1 ? "text-[#ffe7d4]" : ""} underline`}
@@ -71,13 +71,15 @@ function ProjectDetail({ id }) {
         <>
           <P>
             Riqualificazione dell’esistente area relax del complesso RSA Virgo
-            Potens a Moncrivello (TO), progettando un giardino d’inverno. La
-            struttura viene ampliata ed estesa ai tre livelli del complesso in
-            modo da essere fruibile non solo al pian terreno. Alcuni particolari
-            vincoli sono stati imposti da tenere in considerazione per la
-            progettazione del “Giardino d’inverno”: tra questi vi è la facciata
-            storica dell’RSA, la meridiana da non nascondere e le altre facciate
-            del cortile interno che presentano edifici facenti parte
+            Potens a Moncrivello (TO), progettando un giardino d’inverno.
+          </P>
+          <P>
+            La struttura viene ampliata ed estesa ai tre livelli del complesso
+            in modo da essere fruibile non solo al pian terreno. Alcuni
+            particolari vincoli sono stati imposti da tenere in considerazione
+            per la progettazione del “Giardino d’inverno”: tra questi vi è la
+            facciata storica dell’RSA, la meridiana da non nascondere e le altre
+            facciate del cortile interno che presentano edifici facenti parte
             dell’interno complesso e tutte quote diverse. La necessità di
             realizzare tale struttura nasce dall’esigenza di offrire un servizio
             di assistenza ad alta qualità per i malati cronici e particolarmente
@@ -167,25 +169,196 @@ function ProjectDetail({ id }) {
         </>,
       ],
     },
+    "robson-square": {
+      header: (
+        <>
+          <a
+            className="text-6xl text-[#ffe7d4] font-bold cursor-pointer"
+            onClick={() => setStep(0)}
+          >
+            Robson Square accessibility case study
+          </a>
+          <H3>2022</H3>
+          <H2 className="text-2xl">Archicad</H2>
+        </>
+      ),
+      toc: (
+        <>
+          <p className="mb-2 font-bold">Dettagli</p>
+          <div className="flex flex-col items-start">
+            <button
+              className={`${step === 1 ? "text-[#ffe7d4]" : ""} underline`}
+              onClick={() => setStep(1)}
+            >
+              Rampa accessibile
+            </button>
+          </div>
+        </>
+      ),
+      steps: [
+        <>
+          <P>
+            Robson Square venne realizzata tra il 1978 e il 1983 da Cornelia
+            Hahn Oberlander e Arthur Erickson nel centro di Vancouver, in
+            Canada. Questa grande opera di design è nata con l’obiettivo di
+            essere inclusiva, tema caro ad Arthur Erikson, poiché il padre perse
+            entrambe le gambe nella Prima Guerra Mondiale, e, seppur non lo sia
+            realmente, è stata costruita prima dell’emanazione delle leggi a
+            riguardo. Le criticità riscontrate nell’opera sono:
+          </P>
+          <ul className="list-disc list-inside text-lg py-2">
+            <li>pendenza della rampa superiore all’8%</li>
+            <li>pianerottoli troppo distanti tra loro</li>
+            <li>
+              difficoltà nel distinguere la fine dei gradini e l’inizio della
+              rampa per le persone con ridotta capacità visiva
+            </li>
+            <li>corrimani che si interrompono bruscamente.</li>
+          </ul>
+          <P>
+            Si è quindi scelto di modellare due rampe-scale: una con le
+            dimensioni fedeli all’opera originale (sinistra) e una creata
+            rispondendo alle criticità precedentemente elencate (destra).
+          </P>
+        </>,
+        <>
+          <H2>Rampa accessibile</H2>
+          <div className="space-y-6 pt-4">
+            <section>
+              <P>
+                <b className="text-xl">Pendenza della rampa superiore all’8%</b>
+              </P>
+              <P>
+                La legge 13/89, Decreto Ministeriale 236/89 relativa alla
+                realizzazione di rampe atte al superamento delle barriere
+                architettoniche sancisce che la pendenza consigliata di una
+                rampa varia tra il 4% e il 6%, ma non deve superare l’8%, in
+                quanto difficilmente può essere superata in modo autonomo. Si è
+                scelto di eliminare le due fioriere e gradinate laterali alla
+                base della rampa-scala. In questo modo è stato possibile
+                allungare la rampa, diminuendone di conseguenza la pendenza,
+                senza andare ad intervenire sulla geometria degli edifici
+                presenti.
+              </P>
+            </section>
+            <section>
+              <P>
+                <b className="text-xl">Pianerottoli troppo distanti tra loro</b>
+              </P>
+              <P>
+                Sempre secondo la legge 13/89, Decreto Ministeriale 236/89, deve
+                essere presente un pianerottolo ogni 10 m, ma nell’opera
+                originale questi sono posti ad una distanza maggiore. Sono
+                quindi stati modellati dei pianerottoli intermedi, in modo che
+                percorrendo la rampa si possano fare delle soste.
+              </P>
+            </section>
+            <section>
+              <P>
+                <b className="text-xl">
+                  Difficoltà nel distinguere la fine dei gradini e l’inizio
+                  della rampa per le persone con ridotta capacità visiva
+                </b>
+              </P>
+              <P>
+                La rampa-scala è stata realizzata in un unico materiale e dello
+                stesso colore, questo è un problema per le persone cieche, o con
+                ridotte capacità visive, poiché faticano a distinguere i punti
+                in cui terminano i gradini e inizia la rampa, rischiando di
+                inciampare e ferirsi. Sono quindi stati utilizzati tre colori
+                distinti, ma che non si scostano eccessivamente dall’originale:
+                uno per i gradini, uno per le rampe e uno per i pianerottoli.
+              </P>
+            </section>
+            <section>
+              <P>
+                <b className="text-xl">
+                  Corrimani che si interrompono bruscamente
+                </b>
+              </P>
+              <P>
+                I corrimani che si interrompono bruscamente sono stati definiti
+                più pericolosi che utili. Non è stata trovata una soluzione
+                architettonica a questo problema, ma si è pensato di incidere in
+                braille la direzione di percorrenza e l&rsquo;inizio e la fine
+                di ogni corrimano, in modo che chi lo percorre sia avvisato
+                dell&rsquo;interruzione.
+              </P>
+              <div className="grid grid-cols-2 items-center gap-4 mt-4">
+                <img
+                  src="/robson-square/braille-1.jpg"
+                  alt="Braille su corrimano"
+                />
+                <img
+                  src="/robson-square/braille-2.png"
+                  alt="Descrizione braille su rampa"
+                />
+              </div>
+            </section>
+          </div>
+        </>,
+      ],
+    },
+    "gioberti-45": {
+      header: (
+        <>
+          <a
+            className="text-6xl text-[#ffe7d4] font-bold cursor-pointer"
+            onClick={() => setStep(0)}
+          >
+            Condominio Gioberti 45
+          </a>
+          <H3>2022</H3>
+          <H2 className="text-2xl">Archicad</H2>
+        </>
+      ),
+      steps: [
+        <>
+          <P>
+            Riproduzione del condominio in cui vivo, prestando maggiore
+            attenzione al mio appartamento.
+          </P>
+          <P>
+            Questo è il primo progetto che ho realizzato utilizzando il software
+            ARCHICAD. La struttura si sviluppa su cinque piani, l’appartamento
+            di riferimento si trova al terzo. Come prima cosa è stata realizzata
+            la componente strutturale, non conoscendo la posizione dei pilastri
+            è stata ipotizzata la loro posizione, creando una maglia strutturale
+            con una luce inferiore ai 5m. Dopodiché è stata modellata la parte
+            architettonica.
+          </P>
+        </>,
+      ],
+    },
   };
 
   return (
-    <div className="grid grid-cols-6 bg-gray-300 min-h-screen">
-      <div className="col-span-2 bg-gray-600 px-8 py-16 text-white relative">
+    <div className="grid grid-cols-1 md:grid-cols-6 bg-gray-300 min-h-screen">
+      <div className="col-span-2 bg-gray-600 pt-16 text-white relative max-h-screen overflow-y-auto flex flex-col">
         <Link href="/">
-          <a className="absolute top-0 py-8 hover:underline">
+          <a className="absolute top-0 py-8 hover:underline px-8">
             &#8592; Torna alla home
           </a>
         </Link>
-        {posts[id].header}
-        <div className="mt-8">{posts[id].steps[step]}</div>
-        <div className="absolute bottom-0 pb-8 left-0 right-0 px-8 bg-gray-500">
+        <div className="px-8">{posts[id].header}</div>
+        <div
+          id="viewer-container"
+          className="col-span-4 items-start max-h-screen flex md:hidden mt-8"
+        >
+          <img
+            src={`/${id}/${step}.png`}
+            alt={step}
+            className="object-cover w-full h-full object-top"
+          />
+        </div>
+        <div className="mt-8 px-8 flex-1">{posts[id].steps[step]}</div>
+        <div className="sticky bottom-0 p-8 left-0 right-0 bg-gray-500 mt-8">
           {posts[id].toc}
         </div>
       </div>
       <div
         id="viewer-container"
-        className="col-span-4 items-start bg-[#ffe7d4] pl-1 flex"
+        className="col-span-4 items-start bg-[#ffe7d4] pl-1 max-h-screen hidden md:flex"
       >
         <img
           src={`/${id}/${step}.png`}

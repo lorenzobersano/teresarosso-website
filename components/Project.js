@@ -12,7 +12,7 @@ function Project({ image, title, year, id }) {
   return (
     <Link href={`/projects/${id}`} passHref>
       <motion.div
-        className="w-full bg-gray-500 rounded-lg shadow-md hover:shadow-lg bg-opacity-60 cursor-pointer relative"
+        className="w-full bg-gray-500 shadow-md hover:shadow-lg bg-opacity-60 cursor-pointer relative"
         onHoverStart={() => setIsHovering(true)}
         onHoverEnd={() => setIsHovering(false)}
       >
@@ -21,7 +21,7 @@ function Project({ image, title, year, id }) {
           alt={image.alt}
           width={image.width}
           height={image.height}
-          className="w-full object-fill"
+          className="w-full h-full object-cover"
         />
         <AnimatePresence>
           {isHovering && (

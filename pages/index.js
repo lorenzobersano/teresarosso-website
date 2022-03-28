@@ -14,63 +14,62 @@ export default function Home() {
         <title>Teresa Rosso</title>
       </Head>
       <Container>
-        <header className="flex gap-16 items-center">
+        <header className="flex flex-col md:flex-row gap-16 items-center">
           <Image
             alt="Foto di Teresa Rosso"
             src={"/me.jpeg"}
             width="700"
             height="700"
             className="rounded-full object-cover object-top"
-          ></Image>
+          />
           <div>
             <H1>Teresa Rosso</H1>
             <H2>Dottoressa in Ingegneria Edile</H2>
             <div className="mt-8">
               <P>
-                A est rerum aspernatur exercitationem ut qui. Asperiores
-                consectetur iusto possimus sint sequi magni nemo. Impedit sequi
-                maxime optio delectus placeat. Eius omnis cupiditate error porro
-                corrupti veniam maiores. Et officia dolores nemo placeat
-                voluptatem tempora.
+                Sono una dottoressa in ingegneria edile, laureata presso il
+                Politecnico di Torino, determinata e con il desiderio di
+                crescere professionalmente.
               </P>
               <P>
-                Error quisquam dolores nulla in dolores nisi debitis sint. Cum
-                quae enim eum ipsum officia voluptatem. Labore est quia
-                consequatur nostrum.
+                Partendo dall’utilizzo di AutoCAD, ho scoperto il mondo BIM
+                grazie ai corsi universitari e me ne sono appassionata. Ho
+                quindi iniziato il mio viaggio nella modellazione digitale
+                imparando l’utilizzo di software come Revit, ReCap, Insight,
+                ARCHICAD e Enscape. E non vedo l’ora di ampliare il mio bagaglio
+                di conoscenza.
               </P>
             </div>
           </div>
         </header>
         <main className="mt-24 space-y-4">
           <H3>Progetti</H3>
-          <div className="grid grid-cols-2 gap-2">
-            {/* <Project
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+            <Project
               image={{
-                src: "https://via.placeholder.com/150",
                 width: 150,
                 height: 150,
-                alt: "Placeholder image",
+                alt: "Robson Square",
               }}
-              title="Robson Square Accessibilty case study"
+              title="Robson Square accessibilty case study"
               id={"robson-square"}
               year={2022}
             />
             <Project
               image={{
-                src: "https://via.placeholder.com/150",
                 width: 150,
                 height: 150,
-                alt: "Placeholder image",
+                alt: "Condominio Gioberti 45",
               }}
               title="Condominio Gioberti 45"
-              id={"cond-gioberti-45"}
+              id={"gioberti-45"}
               year={2022}
-            /> */}
+            />
             <Project
               image={{
                 width: 150,
                 height: 150,
-                alt: "Placeholder image",
+                alt: "Winter Garden",
               }}
               title="The Winter Garden"
               id={"winter-garden"}
