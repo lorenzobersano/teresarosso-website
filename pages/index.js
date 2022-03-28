@@ -72,7 +72,7 @@ export default function Home() {
               }}
               title="The Winter Garden"
               id={"winter-garden"}
-              year={2021}
+              year={2020}
             />
           </div>
         </main>

@@ -32,7 +32,7 @@ function ProjectDetail({ id }) {
           >
             The Winter Garden
           </a>
-          <H3>2021</H3>
+          <H3>2020</H3>
           <H2 className="text-2xl">Revit</H2>
         </>
       ),
