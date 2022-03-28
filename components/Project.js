@@ -23,6 +23,10 @@ function Project({ image, title, year, id }) {
           height={image.height}
           className="w-full h-full object-cover"
         />
+        <div className="absolute bottom-0 block md:hidden bg-black bg-opacity-60 w-full p-8">
+          <H2 className="font-bold">{title}</H2>
+          <H3>{year}</H3>
+        </div>
         <AnimatePresence>
           {isHovering && (
             <motion.div
@@ -31,7 +35,7 @@ function Project({ image, title, year, id }) {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
               className={
-                "absolute bottom-0 p-4 bg-black right-0 left-0 bg-opacity-80 flex flex-col items-center justify-center top-0"
+                "absolute bottom-0 p-4 bg-black right-0 left-0 bg-opacity-80 hidden md:flex flex-col items-center justify-center top-0"
               }
             >
               <H2 className="font-bold">{title}</H2>

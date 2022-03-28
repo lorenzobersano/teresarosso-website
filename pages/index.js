@@ -43,7 +43,7 @@ export default function Home() {
         </header>
         <main className="mt-24 space-y-4">
           <H3>Progetti</H3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+          <div className="grid grid-cols-1 grid-rows-3 md:grid-rows-2 md:grid-cols-2 gap-2">
             <Project
               image={{
                 width: 150,

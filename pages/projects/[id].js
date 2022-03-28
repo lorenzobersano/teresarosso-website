@@ -27,7 +27,7 @@ function ProjectDetail({ id }) {
       header: (
         <>
           <a
-            className="text-6xl text-[#ffe7d4] font-bold cursor-pointer"
+            className="text-4xl md:text-6xl text-[#ffe7d4] font-bold cursor-pointer"
             onClick={() => setStep(0)}
           >
             The Winter Garden
@@ -173,7 +173,7 @@ function ProjectDetail({ id }) {
       header: (
         <>
           <a
-            className="text-6xl text-[#ffe7d4] font-bold cursor-pointer"
+            className="text-4xl md:text-6xl text-[#ffe7d4] font-bold cursor-pointer"
             onClick={() => setStep(0)}
           >
             Robson Square accessibility case study
@@ -284,7 +284,7 @@ function ProjectDetail({ id }) {
                 di ogni corrimano, in modo che chi lo percorre sia avvisato
                 dell&rsquo;interruzione.
               </P>
-              <div className="grid grid-cols-2 items-center gap-4 mt-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4 mt-4">
                 <img
                   src="/robson-square/braille-1.jpg"
                   alt="Braille su corrimano"
@@ -303,7 +303,7 @@ function ProjectDetail({ id }) {
       header: (
         <>
           <a
-            className="text-6xl text-[#ffe7d4] font-bold cursor-pointer"
+            className="text-4xl md:text-6xl text-[#ffe7d4] font-bold cursor-pointer"
             onClick={() => setStep(0)}
           >
             Condominio Gioberti 45
