@@ -36,6 +36,13 @@ function ProjectDetail({ id }) {
           <H2 className="text-2xl">Revit</H2>
         </>
       ),
+      objectPositions: [
+        "object-fill object-top",
+        "object-contain",
+        "object-contain object-center",
+        "object-scale-down object-center",
+        "object-contain object-top",
+      ],
       toc: (
         <>
           <p className="mb-2 font-bold">Dettagli</p>
@@ -182,6 +189,7 @@ function ProjectDetail({ id }) {
           <H2 className="text-2xl">Archicad</H2>
         </>
       ),
+      objectPositions: ["object-cover object-top", "object-cover"],
       toc: (
         <>
           <p className="mb-2 font-bold">Dettagli</p>
@@ -312,6 +320,7 @@ function ProjectDetail({ id }) {
           <H2 className="text-2xl">Archicad</H2>
         </>
       ),
+      objectPositions: ["object-fill object-top"],
       steps: [
         <>
           <P>
@@ -352,18 +361,18 @@ function ProjectDetail({ id }) {
           />
         </div>
         <div className="mt-8 px-8 flex-1">{posts[id].steps[step]}</div>
-        <div className="sticky bottom-0 p-8 left-0 right-0 bg-gray-500 mt-8">
+        <div className="sticky bottom-0 py-4 px-8 left-0 right-0 bg-gray-500 mt-8">
           {posts[id].toc}
         </div>
       </div>
       <div
         id="viewer-container"
-        className="col-span-4 items-start bg-[#ffe7d4] pl-1 max-h-screen hidden md:flex"
+        className="col-span-4 items-start bg-white border-l-4 border-[#ffe7d4] max-h-screen hidden md:flex"
       >
         <img
-          src={`/${id}/${step}.png`}
+          src={`/${id}/${id === "gioberti-45" ? 1 : step}.png`}
           alt={step}
-          className="object-cover w-full h-full object-top"
+          className={`${posts[id].objectPositions[step]} w-full h-full`}
         />
       </div>
     </div>
