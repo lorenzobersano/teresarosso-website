@@ -78,7 +78,7 @@ function ProjectDetail({ id }) {
         <>
           <P>
             Riqualificazione dell’esistente area relax del complesso RSA Virgo
-            Potens a Moncrivello (TO), progettando un giardino d’inverno.
+            Potens a Moncrivello (VC), progettando un giardino d’inverno.
           </P>
           <P>
             La struttura viene ampliata ed estesa ai tre livelli del complesso
@@ -151,8 +151,8 @@ function ProjectDetail({ id }) {
             ripetuto fino ad ottenere un risultato ottimale. Infine, il pluviale
             è stato fissato alla struttura tramite diverse piastre di
             ancoraggio, anch’esse scaricate da Internet. Dato il diametro sono
-            stati considerati pluviali ogni 70 m2 , quindi, le famiglie
-            realizzate in totale sono cinque.
+            stati considerati pluviali ogni 70 m<sup>2</sup>, quindi, le
+            famiglie realizzate in totale sono cinque.
           </P>
         </>,
         <>
