@@ -118,7 +118,7 @@ function ProjectDetail({ id }) {
             finestra per ottenere un effetto ottico più realistico. Ad ogni
             piano sono state previste finestre ad altezze non convenzionali,
             apribili per eventi straordinari come pulizia e manutenzione. Si è
-            scelto di utilizzare montanti e telai in alluminio di 3 cm di
+            scelto di utilizzare montanti e telai in alluminio di 3cm di
             spessore ed un triplo vetro basso emissivo per le superfici vetrate,
             le porte e le finestre.
           </P>
@@ -133,7 +133,7 @@ function ProjectDetail({ id }) {
             conferire alla massa la forma armonica finale. Soddisfatti del
             risultato si è terminata la modifica della massa ed è stata
             posizionata su di essa la copertura vetrata con i relativi montanti
-            al fine di creare pannelli di dimensioni 80x80 cm. I punti di
+            al fine di creare pannelli di dimensioni 80x80cm. I punti di
             estremità della copertura presentano lo stesso offset per accogliere
             più facilmente il canale di gronda.
           </P>
@@ -144,8 +144,8 @@ function ProjectDetail({ id }) {
             I tre pluviali che arrivano al piano terra sono stati modellati
             inclinati seguendo il profilo della facciata continua. Sono state
             scaricate da Internet le famiglie corrispondenti alle diverse
-            componenti, tutte di diametro 10 cm. Per ogni pluviale è stata
-            creata una famiglia composta dall’assemblaggio delle diverse parti
+            componenti, tutte di diametro 10cm. Per ogni pluviale è stata creata
+            una famiglia composta dall’assemblaggio delle diverse parti
             modificate in lunghezza, orientazione e inclinazione. Dopodiché, il
             pluviale è stato caricato nel modello per verificarne la corretta
             modellazione, dato che non coincideva perfettamente si è riaperta la
@@ -153,8 +153,8 @@ function ProjectDetail({ id }) {
             ripetuto fino ad ottenere un risultato ottimale. Infine, il pluviale
             è stato fissato alla struttura tramite diverse piastre di
             ancoraggio, anch’esse scaricate da Internet. Dato il diametro sono
-            stati considerati pluviali ogni 70 m<sup>2</sup>, quindi, le
-            famiglie realizzate in totale sono cinque.
+            stati considerati pluviali ogni 70m<sup>2</sup>, quindi, le famiglie
+            realizzate in totale sono cinque.
           </P>
         </>,
         <>
@@ -164,12 +164,12 @@ function ProjectDetail({ id }) {
             pozzetti sifonati (uno per ciascuno), i quali sono collegati tra
             loro tramite una tubatura orizzontale interrata indirizzata verso il
             recapito del Trompone. Da Internet è stato scaricato un pozzetto di
-            dimensioni 40x40x40 cm e modificato affinché l’ingresso e l’uscita
+            dimensioni 40x40x40cm e modificato affinché l’ingresso e l’uscita
             combaciassero con le rispettive tubazioni. La tubatura orizzontale è
             stata creata come famiglia composta da componenti orizzontali
             collegati tra loro tramite gomiti, entrambe le parti presentano una
-            pendenza del 2%, poiché per il drenaggio con un diametro di 85-110
-            mm, la pendenza è di 2 cm al metro. L’acqua è convogliata in un
+            pendenza del 2%, poiché per il drenaggio con un diametro di
+            85-110mm, la pendenza è di 2cm al metro. L’acqua è convogliata in un
             quarto pozzetto sifonato posizionato nei pressi della porta
             d’ingesso al giardino d’inverno, da qui parte l’ultimo tratto
             indirizzato verso il recapito. Dal momento che non si conosce la
@@ -258,7 +258,7 @@ function ProjectDetail({ id }) {
               </P>
               <P>
                 Sempre secondo la legge 13/89, Decreto Ministeriale 236/89, deve
-                essere presente un pianerottolo ogni 10 m, ma nell’opera
+                essere presente un pianerottolo ogni 10m, ma nell’opera
                 originale questi sono posti ad una distanza maggiore. Sono
                 quindi stati modellati dei pianerottoli intermedi, in modo che
                 percorrendo la rampa si possano fare delle soste.
