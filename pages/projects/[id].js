@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
 import Container from "../../components/Container";
@@ -24,6 +25,7 @@ function ProjectDetail({ id }) {
 
   const posts = {
     "winter-garden": {
+      title: "The Winter Garden",
       header: (
         <>
           <a
@@ -177,6 +179,7 @@ function ProjectDetail({ id }) {
       ],
     },
     "robson-square": {
+      title: "Robson Square accessibility case study",
       header: (
         <>
           <a
@@ -308,6 +311,7 @@ function ProjectDetail({ id }) {
       ],
     },
     "gioberti-45": {
+      title: "Condominio Gioberti 45",
       header: (
         <>
           <a
@@ -342,40 +346,46 @@ function ProjectDetail({ id }) {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-6 bg-gray-300 min-h-screen">
-      <div className="col-span-2 bg-gray-600 pt-16 text-white relative max-h-screen overflow-y-auto flex flex-col">
-        <Link href="/">
-          <a className="absolute top-0 py-8 hover:underline px-8">
-            &#8592; Torna alla home
-          </a>
-        </Link>
-        <div className="px-8">{posts[id].header}</div>
+    <>
+      <Head>
+        <title>{posts[id].title} | Teresa Rosso</title>
+      </Head>
+
+      <div className="grid grid-cols-1 md:grid-cols-6 bg-gray-300 min-h-screen">
+        <div className="col-span-2 bg-gray-600 pt-16 text-white relative max-h-screen overflow-y-auto flex flex-col">
+          <Link href="/">
+            <a className="absolute top-0 py-8 hover:underline px-8">
+              &#8592; Torna alla home
+            </a>
+          </Link>
+          <div className="px-8">{posts[id].header}</div>
+          <div
+            id="viewer-container"
+            className="col-span-4 items-start max-h-screen flex md:hidden mt-8"
+          >
+            <img
+              src={`/${id}/${id === "gioberti-45" ? 1 : step}.png`}
+              alt={step}
+              className="object-cover w-full h-full object-top"
+            />
+          </div>
+          <div className="mt-8 px-8 flex-1">{posts[id].steps[step]}</div>
+          <div className="sticky bottom-0 py-4 px-8 left-0 right-0 bg-gray-500 mt-8">
+            {posts[id].toc}
+          </div>
+        </div>
         <div
           id="viewer-container"
-          className="col-span-4 items-start max-h-screen flex md:hidden mt-8"
+          className="col-span-4 items-start bg-white border-l-4 border-[#ffe7d4] max-h-screen hidden md:flex"
         >
           <img
-            src={`/${id}/${step}.png`}
+            src={`/${id}/${id === "gioberti-45" ? 1 : step}.png`}
             alt={step}
-            className="object-cover w-full h-full object-top"
+            className={`${posts[id].objectPositions[step]} w-full h-full`}
           />
         </div>
-        <div className="mt-8 px-8 flex-1">{posts[id].steps[step]}</div>
-        <div className="sticky bottom-0 py-4 px-8 left-0 right-0 bg-gray-500 mt-8">
-          {posts[id].toc}
-        </div>
       </div>
-      <div
-        id="viewer-container"
-        className="col-span-4 items-start bg-white border-l-4 border-[#ffe7d4] max-h-screen hidden md:flex"
-      >
-        <img
-          src={`/${id}/${id === "gioberti-45" ? 1 : step}.png`}
-          alt={step}
-          className={`${posts[id].objectPositions[step]} w-full h-full`}
-        />
-      </div>
-    </div>
+    </>
   );
 }
 
